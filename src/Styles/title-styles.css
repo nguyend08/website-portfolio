@@ -1,0 +1,16 @@
+.title-highlight {
+  color: #228B22;
+  text-decoration: none;
+}
+
+.title-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.title {
+  width: 55%;
+  font-size: 2.8rem;
+  font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+  font-weight: 400;
+}
