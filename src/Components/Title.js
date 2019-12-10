@@ -5,8 +5,8 @@ export default function Title (props) {
   return (
     <div className='title-container'>
       <div class='title'>
-        Hello, my name is <a className='title-highlight' href="https://www.linkedin.com/in/daniel-nguyen-08/">Daniel Nguyen</a>, 
-        and I am a <a className='title-highlight' href="https://github.com/nguyend08">Full-Stack Developer</a> based in San Francisco, CA
+        Hello, my name is <a className='title-highlight' href="https://www.linkedin.com/in/daniel-nguyen-08/" target="_blank">Daniel Nguyen</a>, 
+        and I am a <a className='title-highlight' href="https://github.com/nguyend08" target="_blank">Full-Stack Developer</a> based in San Francisco, CA
       </div>
     <div className='positions'>
         <div className='current-position'>
