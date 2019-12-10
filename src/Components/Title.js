@@ -12,17 +12,20 @@ export default function Title (props) {
         <div className='current-position'>
           Current:
           <p>
-            Looking for a New Opportunity!
+            Currently Searching for a New Opportunity!
           </p>
         </div>
         <div className='previous-position'>
           Previous:
           <div>
-            <img 
-              src='http://valiancecap.com/wp-content/uploads/2018/05/Valliance-Horizontal-Header-3-300x100.png'
-              height="60" 
-              width="170"
-            />
+            <a href="http://valiancecap.com/" target="_blank">
+              <img 
+                src='http://valiancecap.com/wp-content/uploads/2018/05/Valliance-Horizontal-Header-3-300x100.png'
+                height="60" 
+                width="170"
+                alt="Valiance Captial"
+              />
+            </a>
           </div>
 
         </div>
