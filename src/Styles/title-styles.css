@@ -28,8 +28,9 @@
 }
 
 .current-position > p {
-  font-size: 1.0rem;
+  font-size: 0.95rem;
   color: black;
+  width: 45%;
 }
 
 .previous-position > div > a > img{
