@@ -4,12 +4,13 @@
 }
 
 .title-container {
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .title {
+  text-align: center;
   width: 65%;
+  margin: 0 auto;
   font-size: 2.6rem;
   font-family: 'Work Sans',Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -17,14 +18,19 @@
   padding-bottom: 80px;
 }
 
+.positions, .current-position, .previous-position {
+  margin: 0 auto;
+}
+
 .positions {
   font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: auto auto;
   font-size: 1.2rem;
-  width: 75%;
+  width: 65%;
   color: grey;
   text-transform: uppercase;
+  padding-bottom: 80px;
 }
 
 .current-position > p {
