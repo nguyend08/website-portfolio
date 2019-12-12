@@ -13,9 +13,14 @@ export default class About extends React.Component {
         ['Daniel.skills.frontend', 'JavaScript ES6+, React.js, Redux, HTML, CSS, jQuery, Webpack, Babel, AngularJS, Wordpress', true],
         ['Daniel.skills.backend', 'Node.js, Express, MySQL, MongoDB, Mongoose.js', true],
         ['Daniel.skills.other', 'Mocha/Chai, Jest/Enzyme, Amazon Web Services, Elastic BeanStalk, EC2, Docker, Bash, Git', true],
-      ]
+      ],
+      marker: true,
     }
-    this.renderStatements = this.renderStatements.bind(this)
+    this.renderStatements = this.renderStatements.bind(this);
+    this.renderMarker = this.renderMarker.bind(this);
+  }
+  componentDidMount() {
+    this.myMarker = setInterval(() => this.setState(prevState => ({marker: !prevState.marker})), 700)
   }
 
   renderStatements(arr) {
@@ -32,7 +37,16 @@ export default class About extends React.Component {
     )})
   }
 
+  renderMarker() {
+        if (this.state.marker) {
+          return <span className='marker-on'> </span>
+        } else {
+          return <span className='marker-off'> </span>
+        }
+  }
+
   render() {
+    console.log(this.state.marker)
     return (
       <div className='about-container'>
         <div className='terminal-container'>
@@ -43,6 +57,7 @@ export default class About extends React.Component {
           </div>
           <div className='terminal-body'>
             {this.renderStatements(this.state.info)}
+            <span className='marker-arrow'>> </span> {this.renderMarker()}
           </div>
         </div>
       </div>

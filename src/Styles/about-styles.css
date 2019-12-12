@@ -1,15 +1,14 @@
 .about-container {
   width: 50%;
   margin: 0 auto;
-}
-
-.terminal-container {
+  font-family: 'Anonymous Pro', monospace;
 }
 
 .terminal-header {
   background-color: #e4e3e5;
   padding: 5px;
   border-radius: 4px 4px;
+  
 }
 
 .terminal-button {
@@ -40,16 +39,35 @@
   height: 600px;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12);
+  margin-top: -16px;
 }
 
-.terminal-info {
-  font-family: 'Anonymous Pro', monospace;
-}
 
 .terminal-input {
   color: #f7f7f7;
+  padding-top: 25px;
 }
 
 .terminal-output {
   color: #e7d184;
+  margin-top: -10px;
+  line-height: 1.5;
 }
+
+.terminal-body .marker-on {
+  background-color: #f7f7f7;
+}
+
+.terminal-body .marker-off {
+  background-color: #5a5d7a;
+}
+
+.marker-off, .marker-on {
+  white-space:pre;
+  padding: 1px 1px;
+}
+
+.marker-arrow {
+  color: #f7f7f7;
+}
+
