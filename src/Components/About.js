@@ -23,12 +23,12 @@ export default class About extends React.Component {
       console.log(info)
       return ( 
         <div>
-        <li className='terminal-input'>
+        <p className='terminal-input'>
           > {info[0]}
-        </li>
-        <li className='terminal-output'>
+        </p>
+        <p className='terminal-output'>
           {info[2] ? `["${info[1]}"]` : `"${info[1]}"`}
-        </li>
+        </p>
         </div>
     )})
   }
@@ -43,15 +43,7 @@ export default class About extends React.Component {
             <div className='terminal-button green'></div>
           </div>
           <div className='terminal-body'>
-            <ul>
             {this.renderStatements(this.state.info)}
-            </ul>
-            {/* <div className='statement'></div>
-            <div className='statement'></div>
-            <div className='statement'></div>
-            <div className='statement'></div>
-            <div className='statement'></div>
-            <div className='statement'></div> */}
           </div>
         </div>
       </div>
