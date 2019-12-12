@@ -19,10 +19,9 @@ export default class About extends React.Component {
   }
 
   renderStatements(arr) {
-    return arr.map((info, index) => {
-      console.log(info)
+    return arr.map((info) => {
       return ( 
-        <div>
+        <div className='terminal-info'>
         <p className='terminal-input'>
           > {info[0]}
         </p>
