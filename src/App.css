@@ -1,3 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap');
+
+body {
+  font-family: 'Work Sans',Helvetica,Arial,sans-serif;
+}

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../Styles/about-styles.css'
 
-export default class About extends React.Component {
+export default class About extends Component {
   constructor(props) {
     super(props)
 
@@ -21,6 +21,10 @@ export default class About extends React.Component {
   }
   componentDidMount() {
     this.myMarker = setInterval(() => this.setState(prevState => ({marker: !prevState.marker})), 700)
+  }
+
+  componentWillMount() {
+    clearInterval(this.myMarker)
   }
 
   renderStatements(arr) {
@@ -57,7 +61,9 @@ export default class About extends React.Component {
           </div>
           <div className='terminal-body'>
             {this.renderStatements(this.state.info)}
-            <span className='marker-arrow'>> </span> {this.renderMarker()}
+            <div className='marker'>
+              <span className='marker-arrow'>> </span> {this.renderMarker()}
+            </div>
           </div>
         </div>
       </div>

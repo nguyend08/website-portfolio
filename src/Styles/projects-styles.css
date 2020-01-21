@@ -1,0 +1,17 @@
+.projects-container {
+  padding-top: 70px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+
+.projects-title{
+  width: 70%;
+  border: 1px solid purple;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.projects-title > h1 {
+  font-weight: 400;
+}
